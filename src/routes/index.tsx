@@ -14,6 +14,8 @@ import { CostEstimatorPage } from '@/features/cost-estimator/pages/CostEstimator
 import { GlossaryPage } from '@/features/glossary/pages/GlossaryPage';
 import { GlossaryCategoryPage } from '@/features/glossary/pages/GlossaryCategoryPage';
 import { GlossaryTermPage } from '@/features/glossary/pages/GlossaryTermPage';
+import { LearnHomePage } from '@/features/learn/pages/LearnHomePage';
+import { LearnLessonPage } from '@/features/learn/pages/LearnLessonPage';
 import { ROUTES } from './paths';
 
 export const router = createBrowserRouter([
@@ -31,5 +33,7 @@ export const router = createBrowserRouter([
   { path: ROUTES.glossary, element: <GlossaryPage /> },
   { path: '/glossary/:category', element: <GlossaryCategoryPage /> },
   { path: '/glossary/:category/:slug', element: <GlossaryTermPage /> },
+  { path: ROUTES.learn, element: <LearnHomePage /> },
+  { path: '/learn/:slug', element: <LearnLessonPage /> },
   { path: ROUTES.cost, element: <CostEstimatorPage /> },
 ]);

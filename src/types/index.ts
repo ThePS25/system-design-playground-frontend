@@ -216,7 +216,30 @@ export type AppModule =
   | 'challenge'
   | 'interview'
   | 'glossary'
+  | 'learn'
   | 'cost';
+
+export interface LearnLessonSection {
+  heading: string;
+  body: string;
+}
+
+export interface LearnPracticeLink {
+  label: string;
+  route: string;
+  description?: string;
+}
+
+export interface LearnLesson {
+  slug: string;
+  order: number;
+  title: string;
+  subtitle: string;
+  durationMinutes: number;
+  sections: LearnLessonSection[];
+  keyTakeaways: string[];
+  practiceLinks: LearnPracticeLink[];
+}
 
 export type GlossaryCategory = 'hld' | 'lld';
 

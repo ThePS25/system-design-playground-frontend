@@ -1,0 +1,78 @@
+@use '../../../../styles/variables' as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section {
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 15px;
+    color: $text-secondary;
+    line-height: 1.75;
+  }
+}
+
+.takeaways {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    font-size: 14px;
+    color: $text-secondary;
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+
+    &::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: $success;
+      font-weight: 600;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.practiceLink {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: $radius-md;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+
+  &:hover {
+    border-color: rgba($primary, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.linkLabel {
+  font-size: 15px;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.linkDesc {
+  font-size: 13px;
+  color: $text-muted;
+}

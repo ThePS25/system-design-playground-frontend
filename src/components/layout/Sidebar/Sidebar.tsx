@@ -5,6 +5,7 @@ import styles from './Sidebar.module.scss';
 
 const NAV_ITEMS = [
   { to: ROUTES.home, label: 'Home', icon: '🏠' },
+  { to: ROUTES.learn, label: 'Start Here', icon: '🚀' },
   { to: ROUTES.explorer, label: 'Architecture Explorer', icon: '🏗️' },
   { to: ROUTES.traffic, label: 'Traffic Simulator', icon: '📊' },
   { to: ROUTES.failure, label: 'Failure Simulator', icon: '💥' },
@@ -23,8 +24,8 @@ export function Sidebar() {
     <aside className={`${styles.sidebar} ${collapsed ? styles.collapsed : ''}`}>
       <div className={styles.header}>
         <div className={styles.logo}>
-          <span className={styles.logoIcon}>⚡</span>
-          {!collapsed && <span className={styles.logoText}>SD Playground</span>}
+          <span className={styles.logoIcon}>◆</span>
+          {!collapsed && <span className={styles.logoText}>DesignScape</span>}
         </div>
         <button className={styles.toggle} onClick={toggleSidebar} aria-label="Toggle sidebar">
           {collapsed ? '→' : '←'}
@@ -49,7 +50,7 @@ export function Sidebar() {
 
       {!collapsed && (
         <div className={styles.footer}>
-          <span className={styles.footerText}>System Design Playground v1.0</span>
+          <span className={styles.footerText}>DesignScape v1.0</span>
         </div>
       )}
     </aside>

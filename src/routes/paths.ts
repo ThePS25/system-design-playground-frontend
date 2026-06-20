@@ -13,5 +13,7 @@ export const ROUTES = {
   glossary: '/glossary',
   glossaryCategory: (category: string) => `/glossary/${category}`,
   glossaryTerm: (category: string, slug: string) => `/glossary/${category}/${slug}`,
+  learn: '/learn',
+  learnLesson: (slug: string) => `/learn/${slug}`,
   cost: '/cost',
 } as const;

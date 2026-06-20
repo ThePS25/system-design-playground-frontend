@@ -27,8 +27,23 @@
 .subtitle {
   font-size: 18px;
   color: $text-secondary;
-  max-width: 600px;
+  max-width: 640px;
   line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: $radius-md;
+  background: $primary;
+  color: $text-primary;
+  font-size: 15px;
+  font-weight: 600;
+
+  &:hover {
+    background: lighten($primary, 8%);
+  }
 }
 
 .grid {

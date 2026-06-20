@@ -6,6 +6,7 @@ import { ROUTES } from '@/routes/paths';
 import styles from './HomePage.module.scss';
 
 const MODULES = [
+  { route: ROUTES.learn, title: 'Start Here', desc: 'Guided path from zero — no prior experience needed', icon: '🚀', tag: 'Begin' },
   { route: ROUTES.explorer, title: 'Architecture Explorer', desc: 'Browse 8 reference system architectures with interactive nodes', icon: '🏗️', tag: 'Explore' },
   { route: ROUTES.traffic, title: 'Traffic Simulator', desc: 'Simulate traffic from 100 to 1M RPS and detect bottlenecks', icon: '📊', tag: 'Simulate' },
   { route: ROUTES.failure, title: 'Failure Simulator', desc: 'Toggle component failures and visualize cascade impact', icon: '💥', tag: 'Simulate' },
@@ -26,15 +27,18 @@ export function HomePage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Badge variant="primary">Open Source</Badge>
+          <Badge variant="primary">Learn from scratch</Badge>
           <h1 className={styles.title}>
-            Master System Design
-            <span className={styles.highlight}> Interactively</span>
+            Welcome to
+            <span className={styles.highlight}> DesignScape</span>
           </h1>
           <p className={styles.subtitle}>
-            Explore architectures, simulate traffic, model failures, and practice
-            interview challenges — all deterministic, rule-based, and interview-focused.
+            A visual playground for system design — start with the guided path,
+            then explore architectures, run simulations, and practice interview challenges.
           </p>
+          <Link to={ROUTES.learn} className={styles.cta}>
+            Start learning →
+          </Link>
         </motion.section>
 
         <section className={styles.grid}>

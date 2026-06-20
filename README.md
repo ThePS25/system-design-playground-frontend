@@ -1,4 +1,4 @@
-# System Design Playground — Frontend
+# DesignScape — Frontend
 
 React 19 + Vite + TypeScript SPA.
 
@@ -22,6 +22,7 @@ Ensure the backend is running at `http://localhost:4000` (or update `VITE_API_UR
 
 ## Modules
 
+- **Start Here** — guided path for beginners (no prior experience needed)
 - **Architecture Explorer** — reference architectures with interactive canvas
 - **Traffic Simulator** — RPS simulation with bottleneck detection
 - **Failure Simulator** — cascade failure visualization
