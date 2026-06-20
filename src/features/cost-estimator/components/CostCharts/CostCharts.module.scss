@@ -1,0 +1,27 @@
+@use '../../../../styles/variables' as *;
+
+.charts {
+  padding: 0 24px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chartBlock {
+  padding: 16px;
+  background: rgba($accent, 0.04);
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+
+  h4 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $text-muted;
+    margin-bottom: 12px;
+  }
+}

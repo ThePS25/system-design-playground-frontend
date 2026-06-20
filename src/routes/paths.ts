@@ -1,0 +1,17 @@
+export const ROUTES = {
+  home: '/',
+  explorer: '/explorer',
+  explorerDetail: (slug: string) => `/explorer/${slug}`,
+  traffic: '/traffic',
+  failure: '/failure',
+  scaling: '/scaling',
+  scalingDetail: (slug: string) => `/scaling/${slug}`,
+  challenge: '/challenge',
+  challengeDetail: (slug: string) => `/challenge/${slug}`,
+  interview: '/interview',
+  interviewDetail: (slug: string) => `/interview/${slug}`,
+  glossary: '/glossary',
+  glossaryCategory: (category: string) => `/glossary/${category}`,
+  glossaryTerm: (category: string, slug: string) => `/glossary/${category}/${slug}`,
+  cost: '/cost',
+} as const;

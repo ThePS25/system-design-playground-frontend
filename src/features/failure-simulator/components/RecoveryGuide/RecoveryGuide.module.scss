@@ -1,0 +1,48 @@
+@use '../../../../styles/variables' as *;
+
+.guide {
+  padding: 0 20px 20px;
+  border-top: 1px solid $border;
+  padding-top: 20px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-muted;
+  margin-bottom: 16px;
+}
+
+.section {
+  margin-bottom: 16px;
+
+  h4 {
+    font-size: 12px;
+    font-weight: 600;
+    color: $success;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    li {
+      font-size: 13px;
+      color: $text-secondary;
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.4;
+
+      &::before {
+        content: '→';
+        position: absolute;
+        left: 0;
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@use '../../../../styles/variables' as *;
+
+.dashboard {
+  padding: 20px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-muted;
+  margin-bottom: 16px;
+}
+
+.empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: $text-muted;
+  font-size: 14px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  padding: 10px 12px;
+  background: rgba($accent, 0.06);
+  border: 1px solid $border;
+  border-radius: $radius-md;
+}
+
+.statLabel {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $text-muted;
+  margin-bottom: 4px;
+}
+
+.statValue {
+  font-size: 14px;
+  font-weight: 600;
+  color: $text-accent;
+}
+
+.chartBlock {
+  margin-bottom: 16px;
+}
+
+.chartLabel {
+  display: block;
+  font-size: 11px;
+  color: $text-muted;
+  margin-bottom: 6px;
+}

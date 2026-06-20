@@ -1,0 +1,19 @@
+.label {
+  position: absolute;
+  font-size: 10px;
+  padding: 2px 6px;
+  background: rgba(27, 60, 83, 0.92);
+  border: 1px solid rgba(210, 193, 182, 0.2);
+  border-radius: 4px;
+  color: #d2c1b6;
+  pointer-events: all;
+}
+
+.animated {
+  stroke-dasharray: 5;
+  animation: dash 0.5s linear infinite;
+}
+
+@keyframes dash {
+  to { stroke-dashoffset: -10; }
+}

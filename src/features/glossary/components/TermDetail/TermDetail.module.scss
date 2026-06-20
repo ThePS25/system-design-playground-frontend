@@ -1,0 +1,80 @@
+@use '../../../../styles/variables' as *;
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.section {
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+    margin-bottom: 12px;
+  }
+}
+
+.definition {
+  font-size: 16px;
+  color: $text-secondary;
+  line-height: 1.75;
+}
+
+.section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    font-size: 14px;
+    color: $text-secondary;
+    line-height: 1.6;
+    padding-left: 18px;
+    position: relative;
+
+    &::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: $text-muted;
+    }
+  }
+}
+
+.examples li::before {
+  color: $accent;
+}
+
+.tips li::before {
+  color: $primary;
+}
+
+.related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.relatedLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: $radius-md;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  font-size: 14px;
+  color: $text-primary;
+
+  &:hover {
+    border-color: rgba($primary, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+.categoryTag {
+  padding-top: 8px;
+}

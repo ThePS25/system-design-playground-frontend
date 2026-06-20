@@ -1,0 +1,1 @@
+export { TermDetail } from './TermDetail';

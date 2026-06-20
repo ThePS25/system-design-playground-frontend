@@ -1,0 +1,1 @@
+export { ComponentDetailView } from './ComponentDetail';

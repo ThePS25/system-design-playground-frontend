@@ -1,0 +1,124 @@
+@use '../../../../styles/variables' as *;
+
+.panel {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.empty {
+  font-size: 14px;
+  color: $text-muted;
+  line-height: 1.5;
+}
+
+.scoreHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $border;
+}
+
+.scoreLabel {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-muted;
+  margin-bottom: 4px;
+}
+
+.score {
+  font-size: 32px;
+  font-weight: 700;
+  color: $text-accent;
+
+  span {
+    font-size: 18px;
+    color: $text-muted;
+    font-weight: 500;
+  }
+}
+
+.section {
+  margin-bottom: 16px;
+
+  h4 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $text-muted;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  li {
+    padding: 8px 10px;
+    border-radius: $radius-sm;
+    border: 1px solid $border;
+  }
+}
+
+.success li {
+  background: rgba($success, 0.08);
+  border-color: rgba($success, 0.2);
+}
+
+.missing li {
+  background: rgba($warning, 0.06);
+}
+
+.bonus li {
+  background: rgba($primary, 0.12);
+}
+
+.danger li {
+  background: rgba($danger, 0.08);
+  border-color: rgba($danger, 0.2);
+}
+
+.itemLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: $text-primary;
+  margin-bottom: 2px;
+}
+
+.itemReason {
+  font-size: 11px;
+  color: $text-muted;
+}
+
+.feedback {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid $border;
+
+  h4 {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $text-muted;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    li {
+      font-size: 13px;
+      color: $text-secondary;
+      line-height: 1.4;
+    }
+  }
+}

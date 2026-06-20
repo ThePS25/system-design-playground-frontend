@@ -1,0 +1,32 @@
+@use '../styles/variables' as *;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  padding: 16px 24px;
+  border-bottom: 1px solid $border;
+  flex-shrink: 0;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.canvasArea {
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar {
+  width: 360px;
+  border-left: 1px solid $border;
+  background: $bg-secondary;
+  overflow-y: auto;
+  flex-shrink: 0;
+}

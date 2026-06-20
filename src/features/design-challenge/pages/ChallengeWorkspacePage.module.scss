@@ -1,0 +1,56 @@
+@use '../../../styles/variables' as *;
+
+.workspace {
+  display: flex;
+  height: calc(100vh - 0px);
+  min-height: 600px;
+}
+
+.leftPanel {
+  width: 280px;
+  flex-shrink: 0;
+  border-right: 1px solid $border;
+  background: $bg-secondary;
+  overflow-y: auto;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid $border;
+  flex-shrink: 0;
+
+  h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+}
+
+.canvas {
+  flex: 1;
+  min-height: 0;
+}
+
+.rightPanel {
+  width: 360px;
+  flex-shrink: 0;
+  border-left: 1px solid $border;
+  background: $bg-secondary;
+  overflow-y: auto;
+}
+
+.loading {
+  padding: 48px;
+  text-align: center;
+  color: $text-muted;
+}

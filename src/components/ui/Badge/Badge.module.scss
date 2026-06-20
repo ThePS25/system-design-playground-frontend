@@ -1,0 +1,37 @@
+@use '../../../styles/variables' as *;
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: $radius-sm;
+}
+
+.default {
+  background: $bg-elevated;
+  color: $text-secondary;
+}
+
+.primary {
+  background: rgba($primary, 0.15);
+  color: $primary;
+}
+
+.success {
+  background: rgba($success, 0.15);
+  color: $success;
+}
+
+.warning {
+  background: rgba($warning, 0.15);
+  color: $warning;
+}
+
+.danger {
+  background: rgba($danger, 0.15);
+  color: $danger;
+}

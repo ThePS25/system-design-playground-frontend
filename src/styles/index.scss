@@ -1,0 +1,29 @@
+@use 'variables' as *;
+@use 'globals';
+
+.react-flow__node {
+  font-family: $font-family;
+}
+
+.react-flow__background {
+  background: $bg-primary !important;
+}
+
+.react-flow__minimap {
+  background: $bg-secondary !important;
+  border: 1px solid $border !important;
+  border-radius: $radius-md !important;
+}
+
+.react-flow__controls {
+  button {
+    background: $bg-secondary !important;
+    border-color: $border !important;
+    color: $text-secondary !important;
+    fill: $text-secondary !important;
+
+    &:hover {
+      background: $bg-elevated !important;
+    }
+  }
+}

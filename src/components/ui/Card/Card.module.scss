@@ -1,0 +1,26 @@
+@use '../../../styles/variables' as *;
+
+.card {
+  background: $bg-secondary;
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+}
+
+.glass {
+  @include glass-panel;
+}
+
+.hover {
+  transition: all $transition-base;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $border-hover;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
+}
+
+.sm { padding: 12px; }
+.md { padding: 20px; }
+.lg { padding: 28px; }

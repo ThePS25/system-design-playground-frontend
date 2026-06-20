@@ -1,0 +1,87 @@
+@use '../../../../styles/variables' as *;
+
+.panel {
+  padding: 20px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-muted;
+  margin-bottom: 16px;
+}
+
+.empty {
+  font-size: 14px;
+  color: $text-muted;
+  line-height: 1.5;
+}
+
+.summary {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  background: rgba($accent, 0.06);
+  border: 1px solid $border;
+  border-radius: $radius-md;
+}
+
+.statValue {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: $text-accent;
+}
+
+.statLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $text-muted;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: $text-secondary;
+  margin-bottom: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.userItem,
+.internalItem {
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 10px 12px;
+  border-radius: $radius-md;
+  border: 1px solid $border;
+}
+
+.userItem {
+  background: rgba($danger, 0.08);
+  color: $text-primary;
+  border-color: rgba($danger, 0.2);
+}
+
+.internalItem {
+  background: rgba($warning, 0.08);
+  color: $text-secondary;
+  border-color: rgba($warning, 0.2);
+}

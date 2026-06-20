@@ -1,0 +1,80 @@
+@use '../../../../styles/variables' as *;
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+}
+
+.item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: $radius-md;
+  text-align: left;
+  width: 100%;
+  border: 1px solid transparent;
+  transition: all $transition-fast;
+
+  &:hover {
+    background: rgba($accent, 0.06);
+  }
+
+  &.active {
+    background: rgba($primary, 0.2);
+    border-color: rgba($accent, 0.3);
+  }
+}
+
+.marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.stageNum {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: $bg-elevated;
+  border: 1px solid $border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: $text-accent;
+}
+
+.active .stageNum {
+  background: $primary;
+  border-color: $accent;
+}
+
+.line {
+  width: 2px;
+  flex: 1;
+  min-height: 16px;
+  background: $border;
+  margin-top: 4px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  color: $text-primary;
+}
+
+.users {
+  font-size: 11px;
+  color: $text-muted;
+}

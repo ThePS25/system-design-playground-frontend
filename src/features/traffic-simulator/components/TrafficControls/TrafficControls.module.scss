@@ -1,0 +1,51 @@
+@use '../../../../styles/variables' as *;
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-muted;
+}
+
+.levels {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.level {
+  padding: 6px 14px;
+  border-radius: $radius-md;
+  font-size: 13px;
+  font-weight: 500;
+  color: $text-secondary;
+  background: rgba($accent, 0.06);
+  border: 1px solid $border;
+  transition: all $transition-fast;
+
+  &:hover {
+    border-color: $border-hover;
+    color: $text-primary;
+  }
+
+  &.active {
+    background: rgba($primary, 0.35);
+    border-color: rgba($accent, 0.4);
+    color: $text-accent;
+  }
+}

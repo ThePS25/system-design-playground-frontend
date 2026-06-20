@@ -1,0 +1,90 @@
+@use '../../../../styles/variables' as *;
+
+.summary {
+  padding: 24px;
+}
+
+.empty {
+  color: $text-muted;
+  font-size: 14px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.card {
+  padding: 20px;
+  background: rgba($accent, 0.06);
+  border: 1px solid $border;
+  border-radius: $radius-lg;
+}
+
+.label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-muted;
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: 28px;
+  font-weight: 700;
+  color: $text-accent;
+
+  small {
+    font-size: 14px;
+    font-weight: 500;
+    color: $text-muted;
+  }
+}
+
+.breakdownTitle {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $text-muted;
+  margin-bottom: 12px;
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  li {
+    list-style: none;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: $text-primary;
+  margin-bottom: 6px;
+}
+
+.barTrack {
+  height: 6px;
+  background: rgba($accent, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.barFill {
+  height: 100%;
+  background: $primary;
+  border-radius: 3px;
+}
+
+.meta {
+  font-size: 11px;
+  color: $text-muted;
+}

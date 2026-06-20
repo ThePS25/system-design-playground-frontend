@@ -1,0 +1,85 @@
+@use '../../../../styles/variables' as *;
+
+.panel {
+  padding: 24px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+  border-radius: $radius-sm;
+  color: $text-muted;
+  font-size: 14px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: $text-primary;
+  }
+}
+
+.section {
+  margin-bottom: 24px;
+
+  h3 {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: $text-muted;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    color: $text-secondary;
+    line-height: 1.6;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    li {
+      font-size: 14px;
+      color: $text-secondary;
+      padding-left: 16px;
+      position: relative;
+
+      &::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: $text-muted;
+      }
+    }
+  }
+}
+
+.success li::before { color: $success; }
+.danger li::before { color: $danger; }
+
+.questions li {
+  font-style: italic;
+}
+
+.loading {
+  color: $text-muted;
+  padding: 24px;
+}
