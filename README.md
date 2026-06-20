@@ -20,23 +20,34 @@ Ensure the backend is running at `http://localhost:4000` (or update `VITE_API_UR
 | `npm run build` | Production build |
 | `npm run preview` | Preview production build |
 
-## Phase 3 Deliverables
+## Modules
 
-- Vite + React 19 + TypeScript scaffold
-- SCSS Modules design system (dark theme)
-- TanStack Query for server state
-- Zustand stores (flow, simulation, failure, challenge, UI)
-- React Flow architecture canvas engine
-- App layout with sidebar navigation
-- **Architecture Explorer** — list + detail with interactive canvas & side panel
-- **Interview Prep** — component browser
-- Module shells for Traffic, Failure, Scaling, Challenge, Cost (Phase 5–6)
+- **Architecture Explorer** — reference architectures with interactive canvas
+- **Traffic Simulator** — RPS simulation with bottleneck detection
+- **Failure Simulator** — cascade failure visualization
+- **Scaling Evolution** — architecture growth timeline
+- **Design Challenge** — rule-based interview scoring
+- **Interview Prep** — component knowledge base
+- **Glossary** — HLD & LLD system design terms
+- **Cost Estimator** — infrastructure cost calculator
 
 ## Environment
 
-```
-VITE_API_URL=http://localhost:4000/api/v1
-```
+| Variable | Description |
+|----------|-------------|
+| `VITE_API_URL` | Backend API base URL (default `http://localhost:4000/api/v1`) |
+
+## Production Deployment (Netlify)
+
+1. Connect this repo to [Netlify](https://netlify.com).
+2. Build settings are in `netlify.toml` (auto-detected).
+3. Set environment variable in Netlify dashboard:
+   ```
+   VITE_API_URL=https://your-api.onrender.com/api/v1
+   ```
+4. Deploy. Ensure the Render backend has `CORS_ORIGIN` set to your Netlify URL.
+
+Full step-by-step guide: [`../docs/DEPLOYMENT.md`](../docs/DEPLOYMENT.md)
 
 ## Tech Stack
 
