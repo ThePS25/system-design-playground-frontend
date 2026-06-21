@@ -38,17 +38,25 @@ Ensure the backend is running at `http://localhost:4000` (or update `VITE_API_UR
 |----------|-------------|
 | `VITE_API_URL` | Backend API base URL (default `http://localhost:4000/api/v1`) |
 
-## Production Deployment (Netlify)
+## Production Deployment
 
-1. Connect this repo to [Netlify](https://netlify.com).
-2. Build settings are in `netlify.toml` (auto-detected).
-3. Set environment variable in Netlify dashboard:
+### Vercel (recommended if using vercel.app)
+
+1. Connect this repo to [Vercel](https://vercel.com).
+2. `vercel.json` enables SPA routing — refresh and direct URLs like `/learn` work.
+3. Set environment variable:
    ```
    VITE_API_URL=https://your-api.onrender.com/api/v1
    ```
-4. Deploy. Ensure the Render backend has `CORS_ORIGIN` set to your Netlify URL.
+4. Redeploy after changing env vars. Set Render `CORS_ORIGIN` to your Vercel URL (no trailing slash).
 
-Full step-by-step guide: [`../docs/DEPLOYMENT.md`](../docs/DEPLOYMENT.md)
+### Netlify
+
+1. Connect this repo to [Netlify](https://netlify.com).
+2. Build settings are in `netlify.toml` (includes SPA fallback via `public/_redirects`).
+3. Set `VITE_API_URL` in the Netlify dashboard and redeploy.
+
+Full guide: [`../docs/DEPLOYMENT.md`](../docs/DEPLOYMENT.md)
 
 ## Tech Stack
 
